@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <!-- Formulários:
+    tag usada - <form></form> -->
+    <form action="">
+        <h2>Cadastre-se</h2>
+        <label for="email">Email</label> <!-- Label serve para criar um nome associado ao um formulario -->
+        <input type="text" name="login" id="email"> <br>
+        <label for="senha">Senha</label>
+        <input type="password" name="" id=""><br> <br>
+
+        <label for="sexo">Sexo:</label> <br>
+        <label for="masc">Masculino</label>
+        <input type="radio" name="sexo" id="masc">
+        <label for="fem">Feminino</label>
+        <input type="radio" name="sexo" id="fem"> <br> <br>
+
+        <label for="">Interesses:</label> <br>
+        <label for="">Futebol
+            <input type="checkbox" name="" id="">
+        </label>
+        <label for="">Series
+            <input type="checkbox" name="" id="">
+        </label>
+        <label for="">Filmes
+            <input type="checkbox" name="" id="">
+        </label> <br> <br>
+
+        <!-- Outra tag bastante usada é a select>option. Usada para ter uma seleção de vários itens -->
+        <label for="">Estado:
+            <select name="" id="">
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+                <option value="SE">SE</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="AL">AL</option>
+                <option value="CE">CE</option>
+            </select>
+        </label> <br> <br>
+
+        <!-- Podemos digitar formulários de contato utilizando a tag textarea, para enviar uma quantidade
+    grande de mensagens -->
+        <label for="">Observações:</label> <br>
+        <textarea name="" id="" cols="30" rows="5">Digite algo</textarea> <br>
+
+        <input type="submit" value="Cadastrar">
+
+
+        <hr>
+        <h1>Login</h1>
+        <label for="email">Email</label> <!-- Label serve para criar um nome associado ao um formulario -->
+        <input type="text" name="login" id="email"> <br>
+
+        <label for="senha">Senha</label>
+        <input type="password" name="login" id="senha"> <br>
+
+        <input type="submit" value="Entrar">
+
+        <!-- o atributo button serve para executar alguma funcionalkdade no nosso site como scripts
+            o submit serve para enviar solicitações, ou seja, usando uma linguagem de programação podemos
+            trabalhar em envio de formulários 
+        -->
+    </form>
+
+</body>
+
+</html>
