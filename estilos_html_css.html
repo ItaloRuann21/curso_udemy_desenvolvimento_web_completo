@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estilos HTML - CSS</title>
+
+    <style>
+      h1 {
+        text-align: center;
+        border: 3px solid rgb(253, 4, 4);
+        background-color: rgb(253, 4, 4);
+        color: white;
+      }
+      p {
+        text-align: justify;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      #padding {
+        border: 2px solid red;
+        padding: 30px;
+        text-align: center;
+      }
+      .margin {
+        border: 2px solid red;
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Estilos HTML - CSS</h1>
+    <p>CSS significa Folhas de estilos em cascata</p>
+    <p>
+      CSS economiza muito trabalho. Ele pode controlar o layoult de várias
+      páginas da web ao mesmo tempo.
+    </p>
+    <h3>O que é CSS?</h3>
+    <p>
+      Cascading Style Sheets (CSS) - é usado para formatar o layoult de uma
+      página da web. <br />
+      Com CSS, podemos controlar a cor, a fonte, o tamanho do texto, o
+      espaçamentos entre os elementos, como os elementos são posicionados e
+      dispostos, quais imagens ou cores de fundo devem ser usadas, diferentes
+      exibições para diferentes dispositivos e tamanhos de tela, e muito mais!
+    </p>
+    <h3>Usando CSS</h3>
+    <p>CSS pode ser adicionado a documentos HTML de 3 maneiras:
+        <ul>
+            <li><b>Inline</b> - usando o atributo &lt;style&gt; dentro dos elementos HTML.</li>
+            <li><b>Interno</b> - usando um &lt;style&gt; dentro do elemento &lt;head&gt;.</li>
+            <li><b>Externo</b> - usando um &lt;link&gt; elementos para vincular a um arquivo CSS externo (mais usado e recomendado).</li>
+        </ul>
+    </p>
+    <p> maneira mais comum de adicionar CSS é manter os estilos em arquivos CSS externos. Como o curso é de HTML, utilizaremos o estilo <b>inline</b>.</p>
+    <h3>Inline CSS</h3>
+  <p>Exemplo: <br>
+    &lt;h1 <b>style="color:blue;"</b>A Blue Heading&lt;/h1&gt;
+  </p>
+  <h3>CSS Interno</h3>
+  <p>
+    &lt;!DOCTYPE html&gt; <br>
+    &lt;html&gt; <br>
+    &lt;head&gt; <br>
+    &lt;style&gt; <br>
+    <strong>
+    body {background-color: powderblue;} <br>
+    h1   {color: blue;} <br>
+    p    {color: red;} <br>
+    </strong>
+    &lt;/style&gt; <br>
+    &lt;/head&gt; <br>
+    &lt;body&gt; <br> <br>
+    &lt;h1&gt;This is a heading&ç&lt;/h1&gt; <br>
+    &lt;p&gt;This is a paragraph.&lt;/p&gt; <br> <br>
+    &lt;/body&gt; <br>
+    &lt;/html&gt;
+  
+    <h3>CSS Externo</h3>
+    &lt;!DOCTYPE html&gt; <br>
+    &lt;html&gt; <br>
+    &lt;head&gt; <br>
+    <pre>
+        <strong>&lt;link rel="stylesheet" href="styles.css"&gt;</strong>
+    </pre>
+    &lt;/head&gt; <br>
+    &lt;body&gt; <br> <br>
+    &lt;h1&gt;This is a heading&ç&lt;/h1&gt; <br>
+    &lt;p&gt;This is a paragraph.&lt;/p&gt; <br> <br>
+    &lt;/body&gt; <br>
+    &lt;/html&gt;
+
+    <p>Aqui é uma demonstração de um arquivo chamado estilos.css fora do html</p>
+    <h3><q>estilos.css</q></h3>
+    <pre>
+        <strong>
+        body {
+            background-color: powderblue;
+          }
+          h1 {
+            color: blue;
+          }
+          p {
+            color: red;
+          }
+        </strong>
+    </pre>
+
+    <h3>Cores, fontes e tamanho CSS</h3>
+    <p>Algumas propriedades CSS comumente usadas:
+
+        <ul>
+            <li>A propriedade <strong>color</strong> define a cor do texto a ser utilizada.</li>
+            <li>A propriedade CSS <strong>font-family</strong> define a fonte a user utilizada no texto.</li>
+            <li>A propriedade CSS <strong>font-size</strong> define o tamanho do texto a ser utilizado.</li>
+        </ul>
+        
+    </p>
+
+    <h3>Borda CSS</h3>
+    <p>A propriedade <strong>border</strong> define uma borda ao redor de um elemento HTML.</p>
+    <p>Exemplo:
+        <pre>
+            p {
+                border: 2px solid red;
+            }
+        </pre>
+    </p>
+
+    <h3>CSS Padding</h3>
+    <p>A propriedade CSS <b>padding</b> define um preenchimento (espaço) entre o texto e a borda. <br>
+    Exemplo:
+    <pre id="padding">Aqui é uma tag &lt;pre&gt;
+        Utilizando o atributo &lt;padding&gt; para
+        colocar espaçamentos ao redor da borda.
+    </pre>
+    </p>
+    <pre>
+        Modo de uso: 
+        <strong>
+        p{
+            border: 2px solid red;
+            padding: 30px;
+        }
+        </strong>
+    </pre>
+
+    <h3>CSS Margin</h3>
+    <p>A propriedade <strong>margin</strong> define uma margem (espaço) fora da borda. <br>
+        Exemplo:</p>
+    <p class="margin">
+
+        Aqui é uma palavra com borda e utilizando a propriedade margin!
+    </p>
+    <p>Repara que o texto está com um espaço muito maior que o normal de outors textos. o conceito de <b>margin</b> faz isso, deixa espaços ao redor dos textos.</p>
+
+    <h3>Links para CSS externo</h3>
+    <p>As folhas de estilo externas podem ser referenciadas com um URL completo ou com um caminho relativo à página web atual.</p>
+    <p>Utilizando url de algum site que contém CSS configurado para utilizar em nossas páginas HTML:</p>
+    <pre>
+        &lt;link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"&gt;
+    </pre>
+    <p>CSS localizado localmente na pasta html do site atual:</p>
+    <pre>
+        &lt;link rel="stylesheet" href="/html/styles.css"&gt;
+    </pre>
+    <p>CSS vinculado a uma folha de estilo localizada na mesma pasta da página atual.</p>
+    <pre>
+        &lt;link rel="stylesheet" href="styles.css"&gt;
+    </pre>
+
+  </body>
+  
+</html>
