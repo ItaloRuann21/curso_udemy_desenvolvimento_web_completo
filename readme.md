@@ -1,1 +1,1 @@
-Avançando os estudos em HTML
+Curso completo de desenvolvimento web completo.
